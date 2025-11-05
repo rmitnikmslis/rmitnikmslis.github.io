@@ -1,0 +1,126 @@
+/* mystyle.css - single stylesheet used by all pages */
+
+/* Type selector (example: styling all paragraphs) */
+p {
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* Root layout */
+body {
+  margin: 0;
+  background: #002fa7;
+  color: #222;
+  font-size: 16px;
+}
+
+/* Make all headers use Georgia font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Class selector */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(20,30,60,0.06);
+  padding: 18px;
+  margin: 1rem 0;
+}
+
+/* Header and nav */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  background: linear-gradient(90deg,#002fa7,#89CC04 60%);
+  color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: white;
+  padding: 6px;
+}
+
+/* Navigation links */
+.main-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background: rgba(255,255,255,0.14);
+}
+
+/* Container for page content */
+.container {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 0 18px;
+}
+
+/* ID selector for footer */
+#footer {
+  text-align: center;
+  padding: 18px;
+  font-size: 0.95rem;
+  color: #444;
+  background: #fff;
+  border-top: 1px solid #e6e9ef;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e9edf3;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.25rem;
+}
+
+/* Small utility classes */
+.lead {
+  font-size: 1.03rem;
+  color: #2b3e50;
+}
+
+.tagline {
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+  .site-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .main-nav { width: 100%; justify-content: space-around; }
+  .avatar { width: 54px; height: 54px; }
+}
